@@ -7,8 +7,8 @@ phases:
   build:
     commands:
       - echo "2. Build step"
-      - docker build -f ./deploy-helper/nginx/Dockerfile.nginx -t nginx .
-      - docker build -f Dockerfile -t php-fpm .
+      - docker build -f ./deploy-helper/nginx/Dockerfile.nginx -t duylb/taa-nginx .
+      - docker build -f Dockerfile -t duylb/taa-php-fpm .
   post_build:
     commands:
       - echo 3. "Post build"
